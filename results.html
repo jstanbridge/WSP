@@ -1,21 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Results - Tabletop Reviews</title>
-</head>
-<body>
 
-<footer>
-	<ul>
-		<li><a href="">Home</a></li>
-		<li><a href="">Results</a></li>
-		<li><a href="">Details</a></li>
-		<li><a href="">Favorites</a></li>
-		<li><a href="">Login</a></li>
-		<li><a href="">Sign Up</a></li>
-	</ul>
-</footer>
-	
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Results - Tabletop Reviews</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- My CSS -->
+    <link href="css/mystyles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<p class="navbar-text h4">Tabletop Reviews - <small>Best board games reviews on the web.</small></p>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="index.html">Home</a></li>
+               <li class="active"><a href="results.html">Results</a></li>
+               <li><a href="details.html">Details</a></li>
+               <li><a href="faves.html">Favorites</a></li>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- Begin page content -->
+      <div class="container">
+
+		<div class="row">
+
+			<div class="col-md-8">
+				<p>Search Results for: Flash Point Fire Rescue</p>
+				
+				<div class="results">
+					<img src="images/logo.png" alt="">
+					<div class="metainf pull-right">
+					<h4>Flash Point: Fire Rescue</h4>					
+						<ul class="list-inline">
+							<li>2-6</li>
+							<li>Co-Op</li>
+							<li>10+</li>
+							<li>&lt; 1 HR</li>
+							<li>Modern</li>
+						</ul>
+						<button>+ Wishlist</button>
+						<button>Read Review</button>
+					</div>
+				</div>
+				<div class="results">
+					<img src="images/logo.png" alt="">
+					<div class="metainf pull-right">
+					<h4>Fields of Fire</h4>					
+						<ul class="list-inline">
+							<li>1</li>
+							<li>Solo</li>
+							<li>14+</li>
+							<li>&gt; 2 HR</li>
+							<li>Historical</li>
+						</ul>
+						<button>+ Wishlist</button>
+						<button>Read Review</button>	
+					</div>				
+				</div>
+				<div class="results">
+					<img src="images/logo.png" alt="">
+					<div class="metainf pull-right">
+					<h4>Fire &amp; Ice: A Viking Saga</h4>					
+						<ul class="list-inline">
+							<li>3-5</li>
+							<li>VS</li>
+							<li>10+</li>
+							<li>1-2 HR</li>
+							<li>Historical</li>
+						</ul>
+						<button>+ Wishlist</button>
+						<button>Read Review</button>	
+					</div>				
+				</div>
+				<div class="results">
+					<img src="images/logo.png" alt="">
+					<div class="metainf pull-right">
+					<h4>The Great Fire of London 1666</h4>					
+						<ul class="list-inline">
+							<li>3-6</li>
+							<li>VS</li>
+							<li>10+</li>
+							<li>1-2 HR</li>
+							<li>Historical</li>
+						</ul>
+						<button>+ Wishlist</button>
+						<button>Read Review</button>	
+					</div>				
+				</div>
+				<div class="results">
+					<img src="images/logo.png" alt="">
+					<div class="metainf pull-right">
+					<h4>Fire in the Lake</h4>					
+						<ul class="list-inline">
+							<li>1-4</li>
+							<li>VS</li>
+							<li>14+</li>
+							<li>&lt; 2 HR</li>
+							<li>Historical</li>
+						</ul>
+						<button>+ Wishlist</button>
+						<button>Read Review</button>	
+					</div>				
+				</div>
+				<p>Swap the above with a table for each results for better alignment.</p>
+			</div><!-- end 8col -->
+
+			<div class="col-md-4">
+				<p>Filter Results</p>
+				<h3>Header 1</h3>
+				<form>
+					<label for=""><input type="checkbox" name="" id="">2</label>
+					<label for=""><input type="checkbox" name="" id="">2-5</label><br />
+					<label for=""><input type="checkbox" name="" id="">6+</label>
+				</form>
+				<h3>Header 2</h3>
+				<form>
+					<label for=""><input type="checkbox" name="" id="">Co-Op</label>
+					<label for=""><input type="checkbox" name="" id="">VS</label><br />
+					<label for=""><input type="checkbox" name="" id="">Semi Co-Op</label>
+				</form>
+				<h3>Header 3</h3>
+				<form>
+					<label for=""><input type="checkbox" name="" id="">12 &amp; Under</label>
+					<label for=""><input type="checkbox" name="" id="">12-17</label><br />
+					<label for=""><input type="checkbox" name="" id="">18+</label>
+				</form>
+				<h3>Header 4</h3>
+				<form>
+					<label for=""><input type="checkbox" name="" id="">&lt; 1 HR</label>
+					<label for=""><input type="checkbox" name="" id="">1-2 HR</label><br />
+					<label for=""><input type="checkbox" name="" id="">2 HR+</label>
+				</form>
+				<h3>Header 5</h3>
+				<form>
+					<label for=""><input type="checkbox" name="" id="">Fantasy</label>
+					<label for=""><input type="checkbox" name="" id="">Modern</label><br />
+					<label for=""><input type="checkbox" name="" id="">Sci-Fi</label>
+					<label for=""><input type="checkbox" name="" id="">Historical</label><br />
+					<label for=""><input type="checkbox" name="" id="">Party</label>
+				</form>
+			</div><!-- end 4 col -->
+
+		</div><!-- end row -->
+
+      </div><!-- end container -->
+
+      	<div id="push"></div>
+
+      </div><!-- end wrap -->
+
+
+      <div id="footer">
+        <div class="container">
+        	<p class="pull-right"><small>Copyright Tabletop Reviews Inc, or its affiliates.</small></p>
+          <ul class="list-inline pull-left">
+          	<li><a href="">Conditions of Use</a></li>
+          	<li><a href="">Privacy Notice</a></li>
+          </ul>
+        </div><!-- end container -->
+      </div><!-- end footer -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
 </html>
