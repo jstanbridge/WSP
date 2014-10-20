@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-		padding-top: 70px;
+		padding-top: 50px;
 	/* The html and body elements cannot have any padding or margin. */
 }
 
@@ -20,8 +20,9 @@ html, body {
 
 #footer {
 	background-color: #f5f5f5;
-	padding-top: 30px;
+	padding-top: 20px;
 	text-align: right;
+	margin-top: 30px;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -45,6 +46,7 @@ html, body {
 }
 .form-signin .checkbox {
   font-weight: normal;
+  margin-left: 25px;
 }
 .form-signin .form-control {
   position: relative;
@@ -70,7 +72,194 @@ html, body {
 }
 
 /* ===== MY STYLES ===== */
+body {
+	font-size: 1.5em;
+	font-family: 'Ubuntu', sans-serif;
+}
 
+/* === Details Page === */
+
+/* == Content Column == */
+
+.title {
+	background-color: #000;
+	padding: 7px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.title button {
+	background-color: #dd4c35;
+	margin-top: 26px;
+	margin-right: 15px;
+}
+
+#limg {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.lead {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 1.7em;
+	text-align: center;
+	color: #5aafbc;
+}
+
+.dcon {
+	border: 1px solid #e6e6e6;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	background-color: #f3f3f3;
+}
+
+/* == Meta Column == */
+.dinf {
+	background-color: #000;
+	color: #fff;
+	width: 50%;
+	float: left;
+}
+
+.dside {
+	width: 100%;
+	border: 1px solid #A9BEC3;
+	background-color: #dcf1f6;
+}
+
+.dside td {
+	padding-left: 10px;
+}
+
+.ral {
+	width: 50%;
+	text-align: right;
+	padding-right: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.quote {
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+.quote td{
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+#auth {
+	text-align: right;
+	font-weight: 500;
+	font-size: 1.25em;
+}
+
+#auth td {
+	padding: 10px;
+}
+
+/* === Results Page === */
+/* == Results == */
+.srt {
+	background-color: #000;
+	padding-left: 10px;
+	color: #fff;
+}
+
+div.rodd {
+	background-color: #f3fafb;
+}
+
+div.reve {
+	background-color: #dcf1f6;
+}
+
+.results {
+	border: 1px solid #000;
+	padding: 10px;
+	overflow: auto;
+}
+
+.imgcon {
+	width: 33%;
+	margin-right: 20px;
+}
+
+.metainf {
+	margin-top: -15px;
+}
+
+.metainf button {
+	background-color: #dd4c35;
+	color: #fff;
+}
+
+button.review {
+	background-color: #000;
+}
+
+/* == Filter == */
+.filter {
+	border: 1px solid #000;
+	padding: 0px;
+}
+
+.filter h4 {
+	text-align: center;
+	background-color: #73c7d5;
+	margin: 0;
+	padding: 5px;
+	font-weight: 400;
+}
+
+.filter form {
+	background-color: #dcf1f6;
+	padding: 10px;
+}
+
+.filter form label {
+	margin-right: 40px;
+}
+
+.filter input[type=checkbox] {
+	margin-right: 10px;
+}
+
+/* === Favorites Page === */
+.faves {
+	background-color: #f3f3f3;
+}
+
+.favt {
+	text-align: center;
+}
+
+div.favc {
+	width: 33%;
+	padding: 10px;
+	overflow: auto;
+}
+
+.favc h4 {
+	position: relative;
+	text-align: center;
+	margin-top: -5px;
+	background-color: #e6e6e6;
+	z-index: 1;
+	padding: 5px;
+}
+
+.favc img {
+	width: 100%;
+	margin: 0 auto;
+	z-index: -1;
+}
+
+/* === Index Page === */
 .logo {
 	margin: 0 auto;
 	padding-bottom: 20px;
@@ -79,10 +268,65 @@ html, body {
 .subtext {
 	font-size: small;
 	font-style: italic;
+	text-align: center;
 }
 
-.results {
-	border: 1px solid #000;
-	padding-right: 10px;
+.index h2 {
+	text-align: center;
 }
+
+/* == Search == */
+
+.form-inline {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form-inline input[type="text"] {
+	width: 80%;
+	background-color: #dcf1f4;
+	border-color: #000;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.form-inline button {
+	width: 100%;
+	border-color: #000;
+	background-color: #dd4c35;
+	color: #fff;
+}
+
+/* == Browse == */
+#bcon {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ddf1f5;
+}
+.ckcol {
+	width: 20%;
+	float: left;
+}
+
+.bhd {
+	margin: 0;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+
+.checkbox {
+	padding-left: 25px;
+}
+
+#browbtn {
+	width: 100%;
+	background-color: #dd4c35;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+}
+
+
 

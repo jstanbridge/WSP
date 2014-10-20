@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Board Game Reviews">
+    <meta name="keywords" content="board, games, borad game, reviews">
+    <meta name="author" content="James Stanbridge">
     <title>Tabletop Reviews</title>
 
     <!-- Bootstrap -->
@@ -16,6 +19,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- My CSS -->
     <link href="css/mystyles.css" rel="stylesheet">
@@ -44,37 +50,57 @@
       </nav>
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class="container index">
 
       	<img src="images/logo.png" alt="Logo" class="img-responsive logo">
-      	<h2>Search for a Review</h2>
-      	<p class="subtext">If you know some/all of the title of the game you're looking for, use the search box below.</p>
-      	<form class="form-inline">
-      		<div class="form-group"><label for="searchbar"><input type="text"></label></div>
-      		<div class="form-group"><button type="submit" class="btn btn-default">Search</button></div>
-      	</form>
+      	<div id="search col-xs-12">
+	      	<h2>Search for a Review</h2>
+	      	<p class="subtext">If you know some/all of the title of the game you're looking for, use the search box below.</p>
+	      	<form class="form-inline">
+	      		<input type="text">
+	      		<div class="form-group"><button type="submit" class="btn btn-default">Search</button></div>
+	      	</form>
+      	</div>
 
       	<h2>Find a New Game</h2>
       	<p class="subtext">Looking for something new? Select the categories you're interested in to browse suggested games.</p>
-      	<form>
-      		<div class="checkbox"><label><input type="checkbox">2</label></div>
-      		<div class="checkbox"><label><input type="checkbox">2 - 5</label></div>
-      		<div class="checkbox"><label><input type="checkbox">6+</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Co-Op</label></div>
-      		<div class="checkbox"><label><input type="checkbox">VS</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Semi Co-Op</label></div>
-      		<div class="checkbox"><label><input type="checkbox">12 &amp; Under</label></div>
-      		<div class="checkbox"><label><input type="checkbox">12-17</label></div>
-      		<div class="checkbox"><label><input type="checkbox">18+</label></div>
-      		<div class="checkbox"><label><input type="checkbox">&lt; 1 HR</label></div>
-      		<div class="checkbox"><label><input type="checkbox">1-2 HR</label></div>
-      		<div class="checkbox"><label><input type="checkbox">2 HR+</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Fantasy</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Modern</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Sci-Fi</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Historical</label></div>
-      		<div class="checkbox"><label><input type="checkbox">Party</label></div>
-      	</form>
+      		<div id="bcon">
+      			<div class="ckcol">
+      				<p class="h4 bhd"># of Players</p>
+      				<div class="checkbox"><label><input type="checkbox">2</label></div>
+      				<div class="checkbox"><label><input type="checkbox">2 - 5</label></div>
+      				<div class="checkbox"><label><input type="checkbox">6+</label></div>
+      			</div>
+      			<div class="ckcol">
+      				<p class="h4 bhd">Playstyle</p>
+		      		<div class="checkbox"><label><input type="checkbox">Co-Op</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">VS</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">Semi Co-Op</label></div>
+				</div>
+      			<div class="ckcol">
+      				<p class="h4 bhd">Age Range</p>
+		      		<div class="checkbox"><label><input type="checkbox">12 &amp; Under</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">12-17</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">18+</label></div>
+				</div>
+      			<div class="ckcol">
+      				<p class="h4 bhd">Playtime</p>
+		      		<div class="checkbox"><label><input type="checkbox">&lt; 1 HR</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">1-2 HR</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">2 HR+</label></div>
+				</div>
+      			<div class="ckcol">
+      				<p class="h4 bhd">Genre</p>
+		      		<div class="checkbox"><label><input type="checkbox">Fantasy</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">Modern</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">Sci-Fi</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">Historical</label></div>
+		      		<div class="checkbox"><label><input type="checkbox">Party</label></div>
+      			</div>
+
+      	<button type="button" id="browbtn">Browse</button>
+
+      	</div>
 
       </div>
 
