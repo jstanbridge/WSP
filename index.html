@@ -10,6 +10,8 @@
     <meta name="author" content="James Stanbridge">
     <title>Tabletop Reviews</title>
 
+    <link rel="icon" type="image" href="images/favicon.ico">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -36,8 +38,17 @@
 
       <!-- Fixed navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<p class="navbar-text h4">Tabletop Reviews - <small>Best board games reviews on the web.</small></p>
+  		  <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<p class="navbar-text h4">Tabletop Reviews - <small>Best board game reviews on the web.</small></p>
             <ul class="nav navbar-nav navbar-right">
                <li class="active"><a href="index.html">Home</a></li>
                <li><a href="results.html">Results</a></li>
@@ -46,6 +57,7 @@
                <li><a href="login.html">Login</a></li>
                <li><a href="signup.html">Sign Up</a></li>
             </ul>
+          </div>
         </div>
       </nav>
 
@@ -56,49 +68,51 @@
       	<div id="col-xs-12">
 	      	<h2>Search for a Review</h2>
 	      	<p class="subtext">If you know some/all of the title of the game you're looking for, use the search box below.</p>
-	      	<form class="form-inline">
+	      	<form class="mser">
 	      		<input type="text">
-	      		<div class="form-group"><button type="submit" class="btn btn-default">Search</button></div>
+	      		<button type="button">Search</button>
 	      	</form>
       	</div>
+        
+        <div class="hidden-xs">
+        	<h2>Find a New Game</h2>
+        	<p class="subtext">Looking for something new? Select the categories you're interested in to browse suggested games.</p>
+        		<div id="bcon">
+        			<div class="ckcol">
+        				<p class="h4 bhd"># of Players</p>
+        				<div class="checkbox"><label><input type="checkbox">2</label></div>
+        				<div class="checkbox"><label><input type="checkbox">2 - 5</label></div>
+        				<div class="checkbox"><label><input type="checkbox">6+</label></div>
+        			</div>
+        			<div class="ckcol">
+        				<p class="h4 bhd">Playstyle</p>
+  		      		<div class="checkbox"><label><input type="checkbox">Co-Op</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">VS</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">Semi Co-Op</label></div>
+  				</div>
+        			<div class="ckcol">
+        				<p class="h4 bhd">Age Range</p>
+  		      		<div class="checkbox"><label><input type="checkbox">12 &amp; Under</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">12-17</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">18+</label></div>
+  				</div>
+        			<div class="ckcol">
+        				<p class="h4 bhd">Playtime</p>
+  		      		<div class="checkbox"><label><input type="checkbox">&lt; 1 HR</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">1-2 HR</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">2 HR+</label></div>
+  				</div>
+        			<div class="ckcol">
+        				<p class="h4 bhd">Genre</p>
+  		      		<div class="checkbox"><label><input type="checkbox">Fantasy</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">Modern</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">Sci-Fi</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">Historical</label></div>
+  		      		<div class="checkbox"><label><input type="checkbox">Party</label></div>
+        			</div>
 
-      	<h2>Find a New Game</h2>
-      	<p class="subtext">Looking for something new? Select the categories you're interested in to browse suggested games.</p>
-      		<div id="bcon">
-      			<div class="ckcol">
-      				<p class="h4 bhd"># of Players</p>
-      				<div class="checkbox"><label><input type="checkbox">2</label></div>
-      				<div class="checkbox"><label><input type="checkbox">2 - 5</label></div>
-      				<div class="checkbox"><label><input type="checkbox">6+</label></div>
-      			</div>
-      			<div class="ckcol">
-      				<p class="h4 bhd">Playstyle</p>
-		      		<div class="checkbox"><label><input type="checkbox">Co-Op</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">VS</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">Semi Co-Op</label></div>
-				</div>
-      			<div class="ckcol">
-      				<p class="h4 bhd">Age Range</p>
-		      		<div class="checkbox"><label><input type="checkbox">12 &amp; Under</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">12-17</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">18+</label></div>
-				</div>
-      			<div class="ckcol">
-      				<p class="h4 bhd">Playtime</p>
-		      		<div class="checkbox"><label><input type="checkbox">&lt; 1 HR</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">1-2 HR</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">2 HR+</label></div>
-				</div>
-      			<div class="ckcol">
-      				<p class="h4 bhd">Genre</p>
-		      		<div class="checkbox"><label><input type="checkbox">Fantasy</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">Modern</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">Sci-Fi</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">Historical</label></div>
-		      		<div class="checkbox"><label><input type="checkbox">Party</label></div>
-      			</div>
-
-      	<button type="button" id="browbtn">Browse</button>
+        	<button type="button" id="browbtn">Browse</button>
+        </div>
 
       	</div>
 
